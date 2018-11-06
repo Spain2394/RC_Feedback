@@ -1,3 +1,5 @@
+//Reference: http://www.electronoobs.com/eng_robotica_tut6_1.php
+
 #include <Wire.h>
 #include <Servo.h>
 
@@ -129,7 +131,7 @@ void loop() {
 
         D_control = kd*((error - previous_error)/elapsedTime);
 
-        //I_control = kd * error;
+        I_control = ki * error;
 
         //D_control = kd * error;
 
