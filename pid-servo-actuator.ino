@@ -4,7 +4,6 @@
 #include <Servo.h>
 
 Servo elevator;
-
 int16_t Acc_rawX, Acc_rawY, Acc_rawZ,Gyr_rawX, Gyr_rawY, Gyr_rawZ;
 
 float Acceleration_angle[2];
